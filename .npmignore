@@ -1,0 +1,6 @@
+node_modules
+src
+.gitignore
+tsconfig.json
+dist/test.d.ts
+dist/test.js
