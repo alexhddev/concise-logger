@@ -1,4 +1,4 @@
-import { v4 } from 'uuid';
+import { getRandomId } from './lib/IdGenerator';
 
 
 type level = 'Debug' | 'Info' | 'Error';
@@ -22,7 +22,7 @@ export class Logger {
     }
 
     logWithId(message: string) {
-        log('Info', `${v4()} ${message}`);
+        log('Info', `${getRandomId()} ${message}`);
     }
 
 }
