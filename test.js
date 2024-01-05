@@ -1,3 +1,5 @@
 import { Logger } from './src/Logger.js'
 
-new Logger().info('here is an info!!');
+const secret = process.env.SECRET_KEY;
+
+new Logger().info('here is the secret: ' + secret);
