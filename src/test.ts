@@ -1,3 +1,5 @@
 import { Logger } from './Logger'
 
-new Logger().logWithId('Do I have an Id?')
+const secret = process.env.SECRET
+
+new Logger().logWithId('Here is the secret: ' + secret)

@@ -6,7 +6,8 @@
   "types": "dist/Logger.d.ts",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r ts-node/register --env-file=.env src/test.ts"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,7 @@
   "homepage": "https://github.com/barosanuemailtest/concise-logger#readme",
   "devDependencies": {
     "@types/node": "^18.11.18",
+    "ts-node": "^10.9.2",
     "typescript": "^4.9.4"
   }
-
 }
